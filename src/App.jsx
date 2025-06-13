@@ -47,6 +47,8 @@ const App = () => {
   }, [chatHistory]);
 
   return (
+    <>
+      <h3 style={{color: "#6d4fc2", text-align:"center"}}>Not finding what you’re looking for? Let’s chat — click the button at the bottom right!</h3>
     <div className={`container ${showChatbot ? "show-chatbot": ""}`}>
       <button onClick={() => setShowChatbot(prev => !prev)} id="chatbot-toggler">
         <span className="material-symbols-rounded">mode_comment</span>
@@ -77,6 +79,7 @@ const App = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
